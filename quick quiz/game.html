@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="quizStyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="hud">
+            <div id="hud-left">
+                <p>Question <span id="question-number">1</span>/<span id="total-questions">3</span></p>
+                <div class="progress-bar-container">
+                     <div id="progress-bar"></div>
+                </div>
+            </div>
+            <div id="hud-right">
+                <h1><span id="score">0</span></h1>
+            </div>
+        </div>
+        
+        <div id="question-container">
+            <h2 id="question">Answer the following question?</h2>
+            <div class="choices">
+                <button class="choice" data-label="A" onclick="selectAnswer(1)">Choice 1</button>
+                <button class="choice" data-label="B" onclick="selectAnswer(2)">Choice 2</button>
+                <button class="choice" data-label="C" onclick="selectAnswer(3)">Choice 3</button>
+                <button class="choice" data-label="D" onclick="selectAnswer(4)">Choice 4</button>
+            </div>
+          
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
